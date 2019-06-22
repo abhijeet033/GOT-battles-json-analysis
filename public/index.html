@@ -8,34 +8,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game of thrones Analysis</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <style>
-       h1{
-           text-align: center
-       }
-        table {
-            margin: auto;
-            width: 50% !important; 
-            box-shadow: 5px 10px #888888;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    
-    <div class="container">
         <div>
-            <h1>Game Of Thrones Battle Analysis</h1>
-        </div>
-        <div class="table-responsive tab">
+                <h1>Game Of Thrones Battle Analysis</h1>
+                <button id="battle">Analyse Battle Data</button>
+            </div><br>
+            <div id="first" class="main">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr id="main_table" colspan="2" scope="row"></tr>
+                    </tbody>
+                </table>
+            </div>
+    <div class="container">
+
+        <div id="second" class="table-responsive tab">
             <table class="table table-bordered">
                 <tbody>
-                    <tr id="most_active" colspan="2" scope="row"></tr>
+                    <tr id="analyse" colspan="2" scope="row"></tr>
                 </tbody>
             </table>
         </div>
     </div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>

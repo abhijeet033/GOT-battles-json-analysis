@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path')
 const battle=require('./main')
+const data=require('./battle')
 
 //configure express
 const app = express();
@@ -31,9 +32,11 @@ app.get('/', (req, res) => {
 //Using routers
 
 app.get('/analytics',(req,res)=>{
-    console.log("sbdjb")
-    console.log(battle.analytica)
     res.status(200).send(battle.analytica())
+})
+
+app.get('/fulldata',(req,res)=>{
+    res.status(200).send(data);
 })
 
 
